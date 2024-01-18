@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONG COLLECTION</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h2 {
+            color: #0066cc;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: auto;
+        }
+
+        p {
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="reset"],
+        input[type="submit"] {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <h2>TEAM KUIH SONG'S COLLECTION</h2>
+
+    <form name="loginForm" method="POST" action="loginVerify.php">
+
+        <p>Enter your user ID & password:</p>
+
+        User ID <span style="color: red;">**</span> <input type="text" name="UserID" maxlength="15" required><br><br>
+
+        Password <span style="color: red;">**</span> <input type="password" name="UserPwd" maxlength="15" required><br><br>
+
+        <p><i>field with <span style="color: red;">**</span> is compulsory</i></p>
+
+        <input type="reset" value="Cancel">
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
